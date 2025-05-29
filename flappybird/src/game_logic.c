@@ -129,7 +129,7 @@ void SetRandPosition(ObstacleAttr *obstacle)
         obstacle->X = (SSD1306_WIDTH / OLED_WIDTH_DIVIDENDS +
             rand() % ((SSD1306_WIDTH / OLED_WIDTH_DIVIDENDS) - BIRD_WIDTH)) - 1;
     } else {
-        obstacle->X = (rand() % (SSD1306_WIDTH / OLED_WIDTH_DIVIDENDS)) + 1; // 随机数对64取余
+        obstacle->X = (rand() % (SSD1306_WIDTH / OLED_WIDTH_DIVIDENDS)) + 1;
     }
 }
 
